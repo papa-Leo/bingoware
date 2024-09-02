@@ -104,8 +104,8 @@ function display_card ($cardnumber,$fourperpage=false,$name_on=false,$rules="") 
 			
 			if (isset($set[$cardshown])) { //only if the card actually exists!
 				//start printing card
-				echo '<center><table style="background-image: url(\'images/capri-logo.png\'); background-repeat: no-repeat; background-size: contain; background-color: #ffffffe8; background-blend-mode: overlay; background-position: center;" width='.(($fourperpage)?'265':'625').' border=0 cellpadding=0 cellspacing="0" class=bingoCardTable BORDERCOLOR="'.$bordercolor.'"><tr valign=top><td colspan=5 style="padding:4px;">'.$printfooter.'</td></tr><tr height='.(($fourperpage)?'50':'110').'>'; // card background image controlled on this line
-				//echo '<center><table width='.(($fourperpage)?'265':'625').' border=1 cellpadding=0 BORDERCOLOR="'.$bordercolor.'"><tr height='.(($fourperpage)?'50':'110').'>';
+				//echo '<center><table style="background-image: url(\'images/capri-logo.png\'); background-repeat: no-repeat; background-size: contain; background-color: #ffffffe8; background-blend-mode: overlay; background-position: center;" width='.(($fourperpage)?'265':'625').' border=0 cellpadding=0 cellspacing="0" class=bingoCardTable BORDERCOLOR="'.$bordercolor.'"><tr valign=top><td colspan=5 style="padding:4px;">'.$printfooter.'</td></tr><tr height='.(($fourperpage)?'50':'110').'>'; // card background image controlled on this line
+				echo '<center><table width='.(($fourperpage)?'265':'625').' border=1 cellpadding=0 BORDERCOLOR="'.$bordercolor.'"><tr height='.(($fourperpage)?'50':'110').'>';
 				//header
 				for ($column = 0; $column<5; $column++) {
 					echo '<td  width=20% align="center"><b><font size="'.(($fourperpage)?'+3':'+7').'" color="'.$headerfontcolor.'">'.$bingoletters[$column].'</font></b></td>';
@@ -114,7 +114,7 @@ function display_card ($cardnumber,$fourperpage=false,$name_on=false,$rules="") 
 		
 				//table itself
 				for ($row = 0; $row<5; $row++) {
-					echo "<tr height=".(($fourperpage)?"50":"110").">";
+					echo "<tr height=".(($fourperpage)?"50":"110")."capri-logo>";
 		
 					for ($column = 0; $column<5; $column++) { //column has to be inner loop due to HTML table
 						// echo "\n<td align=center bgcolor=\"".($set[$cardshown][$column][$row]["checked"]?$selectedbgcolor:$mainbgcolor)."\">";

@@ -4,7 +4,7 @@
 */
 $date_lastmod = "1 April 2023";
 $version= " v 1.7";
-$bingoletters = array("C", "A", "P", "R", "I");
+$bingoletters = array("B", "I", "N", "G", "O");
 $patternkeywords = array("Normal","Four Corners","Cross-Shaped","T-Shaped","X-Shaped","+ Shaped","Z-Shaped", "N-Shaped", "Box Shaped", "Square Shaped","Full Card");
 
 /* This constant allows one to run a modified bingo up to 50 or 100. 
